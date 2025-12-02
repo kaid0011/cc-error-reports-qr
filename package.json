@@ -1,0 +1,18 @@
+{
+  "name": "error-report-qr",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview --port 5174"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.46.0",
+    "html5-qrcode": "2.3.8"
+  },
+  "devDependencies": {
+    "vite": "^7.2.6"
+  }
+}
