@@ -353,3 +353,8 @@ $("clearOrder").addEventListener("click", () => {
     if (document.hidden) stopScanner();
   });
 })();
+
+window.addEventListener("offline", () => {
+  // If the user loses connection mid-session, send them to offline page.
+  location.replace("/offline.html");
+});

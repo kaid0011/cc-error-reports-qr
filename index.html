@@ -9,9 +9,15 @@
     <meta name="theme-color" content="#0ea5e9" />
     <link rel="stylesheet" href="/src/styles.css" />
   </head>
-  <body>
+<body>
+  <script>
+    if (!navigator.onLine) {
+      location.replace("/offline.html");
+    }
+    window.addEventListener("offline", () => location.replace("/offline.html"));
+  </script>
     <div class="wrap">
-      <div class="title">Error Reports</div>
+      <div class="title">Cotton Care Error Reports</div>
 
 <!-- Scan / Upload -->
 <div class="card">
@@ -85,7 +91,8 @@
 
 
       <div class="sp"></div>
-      <div class="center muted">PWA ready • UI offline; network required to save reports.</div>
+      <div class="center muted">Developed by Azaza Biz Solutions @ 2025</div>
+      <div class="center muted">PWA ready • Internet connection required to save reports.</div>
     </div>
 
     <script type="module" src="/src/main.js"></script>

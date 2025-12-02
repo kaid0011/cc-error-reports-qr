@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Offline — Internet Required</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      :root { color-scheme: light dark; }
+      body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
+      .wrap { min-height:100dvh; display:grid; place-items:center; padding:24px; }
+      .card { max-width:560px; width:100%; border:1px solid #e5e7eb; border-radius:12px; padding:24px; }
+      h1 { margin:0 0 8px; font-size:20px; }
+      p { margin:6px 0; color:#6b7280; }
+      .btn { margin-top:16px; padding:10px 14px; border:1px solid #0ea5e9; border-radius:8px; color:#0ea5e9; background:transparent; cursor:pointer; }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="card">
+        <h1>Internet connection required</h1>
+        <p>This app needs an active connection to scan and submit error reports.</p>
+        <p>Please connect to the internet and try again.</p>
+        <button class="btn" onclick="location.reload()">Retry</button>
+      </div>
+    </div>
+  </body>
+</html>
