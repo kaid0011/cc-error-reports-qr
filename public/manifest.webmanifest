@@ -1,6 +1,6 @@
 {
   "name": "Error Report QR",
-  "short_name": "ErrReportQR",
+  "short_name": "Error Report QR",
   "start_url": ".",
   "display": "standalone",
   "background_color": "#ffffff",
